@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.tonytony.MainActivity">
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:onClick="toregistermain"
+        android:text="@string/register"
+        android:textSize="22sp"
+        android:layout_marginBottom="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt1"
+        android:layout_alignBottom="@+id/bt1"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:text="@string/log"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginBottom="53dp"
+        android:layout_above="@+id/txv2"
+        android:layout_alignLeft="@+id/bt1"
+        android:layout_alignStart="@+id/bt1" />
+
+    <TextView
+        android:id="@+id/txv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/passcode"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/txv1"
+        android:layout_alignStart="@+id/txv1" />
+
+    <EditText
+        android:id="@+id/acountNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txv1"
+        android:layout_alignBottom="@+id/txv1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/txv1"
+        android:layout_toRightOf="@+id/txv1"
+        android:ems="10"
+        android:hint="请输入用户名"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/radioGroup2"
+        android:layout_toRightOf="@+id/radioGroup2"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup2"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/bt2"
+        android:layout_alignLeft="@+id/bt1"
+        android:layout_alignStart="@+id/bt1">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/normaluser"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radioGroup2"
+            android:layout_toEndOf="@+id/radioGroup2"
+            android:layout_toRightOf="@+id/radioGroup2"
+            android:layout_weight="1"
+            android:text="@string/merchant"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/manager"
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+
+</RelativeLayout>

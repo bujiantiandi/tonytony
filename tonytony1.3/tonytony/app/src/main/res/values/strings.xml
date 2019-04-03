@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">tonytony</string>
+    <string name="name">Name</string>
+    <string name="passcode">密码</string>
+    <string name="username">用户名</string>
+    <string name="confirm">确定</string>
+    <string name="log">登录</string>
+    <string name="register">注册</string>
+    <string name="normaluser">普通用户</string>
+    <string name="merchant">商家</string>
+    <string name="manager">管理员</string>
+    <string name="returns">返回</string>
+    <string name="repeatpasscode">重复密码</string>
+    <string name="telephone">电话</string>
+    <string name="password">通行码</string>
+    <string-array name="sort">
+        <item>信用</item>
+        <item>人均从高到底</item>
+        <item>人均从低到高</item>
+        <item>距离从近到远</item>
+    </string-array>
+    <string-array name="month">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="data">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="time">
+        <item>14:00-15:00</item>
+        <item>15:00-16:00</item>
+    </string-array>
+    <string-array name="business">
+        <item>洗发</item>
+        <item>洗剪吹</item>
+        <item>拉直头发</item>
+        <item>烫发</item>
+        <item>染发</item>
+        <item>烫染套餐</item>
+        <item>护法</item>
+    </string-array>
+
+    <string name="drawer_close" />
+    <string name="drawer_open" />
+
+</resources>

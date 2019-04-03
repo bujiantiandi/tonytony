@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hair"
+    tools:context="com.example.tonytony.registermain">
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:text="@string/normaluser"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bt1"
+        android:layout_alignLeft="@+id/bt1"
+        android:layout_alignRight="@+id/bt1"
+        android:layout_alignStart="@+id/bt1"
+        android:layout_below="@+id/bt1"
+        android:layout_marginTop="88dp"
+        android:onClick="toregistermer"
+        android:text="@string/merchant"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bt1"
+        android:layout_alignLeft="@+id/bt2"
+        android:layout_alignRight="@+id/bt1"
+        android:layout_alignStart="@+id/bt2"
+        android:layout_below="@+id/bt2"
+        android:layout_marginTop="98dp"
+        android:onClick="toregisterman"
+        android:text="@string/manager"
+        android:textSize="23sp" />
+
+    <ImageButton
+        android:id="@+id/imbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:onClick="tomain"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+</RelativeLayout>

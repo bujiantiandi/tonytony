@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/username"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="位置"
+        android:textSize="22sp"
+        android:layout_alignBaseline="@+id/etx2"
+        android:layout_alignBottom="@+id/etx2"
+        android:layout_alignLeft="@+id/txv1"
+        android:layout_alignStart="@+id/txv1" />
+
+    <TextView
+        android:id="@+id/txv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txv2"
+        android:layout_alignStart="@+id/txv2"
+        android:layout_below="@+id/txv2"
+        android:layout_marginTop="40dp"
+        android:text="规模"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/txv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/passcode"
+        android:textSize="22sp"
+        android:layout_alignBaseline="@+id/etx3"
+        android:layout_alignBottom="@+id/etx3"
+        android:layout_alignLeft="@+id/txv3"
+        android:layout_alignStart="@+id/txv3" />
+
+    <TextView
+        android:id="@+id/txv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etx4"
+        android:layout_alignBottom="@+id/etx4"
+        android:layout_alignLeft="@+id/txv4"
+        android:layout_alignStart="@+id/txv4"
+        android:text="@string/repeatpasscode"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tx6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telephone"
+        android:textSize="22sp"
+        android:layout_alignBaseline="@+id/etx5"
+        android:layout_alignBottom="@+id/etx5"
+        android:layout_alignLeft="@+id/txv5"
+        android:layout_alignStart="@+id/txv5" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="mertoregistermain"
+        android:text="@string/returns"
+        android:textSize="22sp"
+        android:layout_below="@+id/etx5"
+        android:layout_toRightOf="@+id/tx6"
+        android:layout_toEndOf="@+id/tx6" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:textSize="22sp"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_alignBaseline="@+id/bt1"
+        android:layout_alignBottom="@+id/bt1"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/etx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txv1"
+        android:layout_alignBottom="@+id/txv1"
+        android:layout_toEndOf="@+id/bt1"
+        android:layout_toRightOf="@+id/bt1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etx1"
+        android:layout_alignRight="@+id/etx1"
+        android:layout_below="@+id/etx1"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=" "
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_marginTop="23dp" />
+
+    <EditText
+        android:id="@+id/etx4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etx3"
+        android:layout_alignStart="@+id/etx3"
+        android:layout_below="@+id/etx3"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=" " />
+
+    <EditText
+        android:id="@+id/etx5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etx4"
+        android:layout_alignRight="@+id/etx4"
+        android:layout_below="@+id/etx4"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/etx2"
+        android:layout_alignLeft="@+id/etx2"
+        android:layout_alignStart="@+id/etx2">
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etx3"
+            android:layout_alignStart="@+id/etx3"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="22dp"
+            android:layout_weight="1"
+            android:text="小规模（员工20人以下）" />
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radioGroup"
+            android:layout_toEndOf="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_weight="1"
+            android:text="大规模（员工20人及以上）" />
+    </RadioGroup>
+
+</RelativeLayout>

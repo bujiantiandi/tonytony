@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/txv1"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignBaseline="@+id/etx1"
+        android:layout_alignBottom="@+id/etx1"
+        android:layout_alignLeft="@+id/txv3"
+        android:layout_alignStart="@+id/txv3"
+        android:text="@string/username"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:id="@+id/txv2"
+        android:layout_width="99dp"
+        android:layout_height="37dp"
+        android:layout_alignBaseline="@+id/etx2"
+        android:layout_alignBottom="@+id/etx2"
+        android:layout_alignLeft="@+id/txv3"
+        android:layout_alignStart="@+id/txv3"
+        android:text="@string/passcode"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <TextView
+        android:id="@+id/txv3"
+        android:layout_width="99dp"
+        android:layout_height="37dp"
+        android:text="@string/repeatpasscode"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="183dp"
+        android:layout_alignBaseline="@+id/etx3"
+        android:layout_alignBottom="@+id/etx3"
+        android:layout_alignLeft="@+id/txv4"
+        android:layout_alignStart="@+id/txv4" />
+
+    <TextView
+        android:id="@+id/txv4"
+        android:layout_width="99dp"
+        android:layout_height="36dp"
+        android:text="@string/telephone"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="252dp"
+        android:layout_alignBaseline="@+id/etx4"
+        android:layout_alignBottom="@+id/etx4"
+        android:layout_toLeftOf="@+id/etx3"
+        android:layout_toStartOf="@+id/etx3"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <EditText
+        android:id="@+id/etx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/etx2"
+        android:layout_alignStart="@+id/etx2" />
+
+    <EditText
+        android:id="@+id/etx3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="103dp"
+        android:layout_above="@+id/txv4"
+        android:layout_alignLeft="@+id/etx4"
+        android:layout_alignStart="@+id/etx4"
+        android:layout_marginBottom="37dp" />
+
+    <EditText
+        android:id="@+id/etx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="177dp"
+        android:layout_below="@+id/txv1"
+        android:layout_alignLeft="@+id/etx3"
+        android:layout_alignStart="@+id/etx3" />
+
+    <EditText
+        android:id="@+id/etx4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etx2"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="114dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="245dp" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txv4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txv4"
+        android:layout_marginBottom="49dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:onClick="mantoregistermain"
+        android:text="@string/returns"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etx4"
+        android:layout_alignRight="@+id/etx4"
+        android:layout_alignTop="@+id/bt1"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:text="@string/confirm"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/txv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textSize="22sp"
+        android:layout_below="@+id/txv4"
+        android:layout_alignLeft="@+id/txv4"
+        android:layout_alignStart="@+id/txv4"
+        android:layout_marginTop="38dp" />
+
+    <EditText
+        android:id="@+id/etx5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txv5"
+        android:layout_alignBottom="@+id/txv5"
+        android:layout_toEndOf="@+id/txv4"
+        android:layout_toRightOf="@+id/txv4"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
